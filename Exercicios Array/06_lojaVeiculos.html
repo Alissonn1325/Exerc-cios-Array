@@ -1,0 +1,36 @@
+<script>
+  //Problema: Loja de veículos
+  //Crie os seguintes arrays:
+  // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  // let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+  // let carrosHatch = ["308", "Focus", "i30"];
+
+  //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+  //Apresente a lista final de cada tipo de veículo.
+
+  //ENTRADA
+
+  let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+  let carrosHatch = ["308", "Focus", "i30"];
+
+  
+  const tipo = ["1-SUV", "2-Sedan", "3-Hatch"];
+
+  const veiculo1 = prompt("Qual o primeiro carro?");
+  const tipoVeiculo1 = parseInt(prompt("Qual o codigo da categoria do carro: " + tipo.join(" | "))); 
+  const veiculo2 = prompt("Qual o seu segundo carro?");
+  const tipoVeiculo2 = parseInt(prompt("Qual o codigo da categoria do carro: " + tipo.join(" | "))); 
+  const veiculo3 = prompt("Qual o seu terceiro carro?");
+  const tipoVeiculo3 = parseInt(prompt("Qual o codigo da categoria do carro: " + tipo.join(" | "))); 
+
+  //PROCESSAMENTO
+
+  (tipoVeiculo1 === 1) ? carrosSUV.push(veiculo1) : (tipoVeiculo1 === 2) ? carrosSedan.push(veiculo1) : carrosHatch.push(veiculo1);
+  (tipoVeiculo2 === 1) ? carrosSUV.push(veiculo2) : (tipoVeiculo2 === 2) ? carrosSedan.push(veiculo2) : carrosHatch.push(veiculo2);
+  (tipoVeiculo3 === 1) ? carrosSUV.push(veiculo3) : (tipoVeiculo3 === 2) ? carrosSedan.push(veiculo3) : carrosHatch.push(veiculo3);
+
+  document.write(`Lista CarrosSUV: ${carrosSUV} <br> Lista CarrosSedan: ${carrosSedan} <br> Lista CarrosHatch: ${carrosHatch}`);
+  //SAÍDA
+</script>
