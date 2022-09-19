@@ -1,0 +1,19 @@
+<script>
+
+let listaCria = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let numerosParesCrias = [];
+let numerosImparesCrias = [];
+
+for (numero of listaCria) {
+    if (numero % 2 === 0){
+
+    numerosParesCrias.push(numero);
+}
+else {
+    numerosImparesCrias.push(numero);
+}
+}
+document.write(`Os Números Pares São: ${numerosParesCrias.join(" - ")}</br>`);
+document.write(`Os Números Impares São: ${numerosImparesCrias.join(" - ")}</br>`);
+</script>
